@@ -118,6 +118,14 @@ header {
 .contacts-nav a:hover {
   color: var(--accent-color);
 }
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.contacts-icon:focus,
+.contacts-icon:hover {
+  color: var(--accent-color);
+}
 .link {
   font-family: Roboto;
   font-style: normal;
@@ -145,6 +153,18 @@ span {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .hero-title {
   margin-top: 0px;
@@ -156,7 +176,7 @@ span {
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: #2f303a;
+  background-color: transparent;
 }
 
 .hero-button {
@@ -204,6 +224,9 @@ span {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.icon {
+  margin-bottom: 30px;
 }
 
 .title {
