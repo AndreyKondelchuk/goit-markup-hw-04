@@ -483,6 +483,7 @@ span {
 .all-button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
+  box-shadow: 0 4px 4px 0 var(--primary-text-color);
 }
 
 .examples-title {
@@ -509,6 +510,7 @@ span {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 .examples-title {
   font-size: 18px;
@@ -522,6 +524,10 @@ span {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
+}
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0 4px 4px 0 var(--primary-text-color);
 }
 .link-text {
   padding: 20px 24px;
