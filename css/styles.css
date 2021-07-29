@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --background-color: #ffffff;
   --card-border-line: #eeeeee;
+  --svg: #afb1b8;
 }
 body {
   color: var(--primary-text-color);
@@ -306,8 +307,66 @@ span {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding-bottom: 16px;
+}
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+}
+.networks:nth-child(4) {
+  margin-right: 0;
+}
+.networks {
+  margin-right: 10px;
+}
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--svg);
+}
+.networks-icon {
+  fill: currentColor;
+  margin: 12px;
+}
+.social-networks:hover,
+.social-networks:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
 }
 
+/* Постоянные клиенты */
+
+.customers {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-item:not(:last-child) {
+  flex-basis: calc((100%-180px) / 6);
+  margin-right: 30px;
+}
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--svg);
+  border-radius: 4px;
+  color: var(--svg);
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+.customers-icon {
+  fill: currentColor;
+  margin: 16px 32px;
+}
 /* footer */
 
 .footer {
@@ -349,6 +408,51 @@ span {
 .footer-contacts-list-link:hover,
 .footer-contacts-list-link:focus {
   color: var(--accent-color);
+}
+.footer-items {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contacts {
+  margin-right: 70px;
+}
+/*Присоединяйтесь*/
+.join .join-networks {
+  color: var(--background-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+.join .social-networks-list {
+  margin-top: 20px;
+  margin-left: 0;
+}
+.join .networks {
+  background-color: #44454e;
+  border-radius: 50%;
+}
+.join .social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #44454e;
+  color: var(--background-color);
+}
+.join .networks-icon {
+  fill: currentColor;
+  margin: 12px;
+}
+.join .social-networks:hover,
+.join .social-networks:focus {
+  background-color: var(--accent-color);
 }
 
 /* portfolio */
