@@ -40,7 +40,7 @@ ul {
   /* padding-bottom: 94px; */
 }
 header {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ececec;
 }
 /* .page-header {
   background-color: #ccc;
@@ -164,7 +164,7 @@ span {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-img.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .hero-title {
@@ -226,8 +226,17 @@ span {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.icon {
+.features-icon {
+  background-color: #f5f4fa;
+  border-radius: 4px;
   margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -527,7 +536,9 @@ span {
 }
 .projects-link:hover,
 .projects-link:focus {
-  box-shadow: 0 4px 4px 0 var(--primary-text-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
 }
 .link-text {
   padding: 20px 24px;
